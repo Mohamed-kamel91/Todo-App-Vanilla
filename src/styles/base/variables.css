@@ -1,0 +1,53 @@
+:root {
+  /* FONT family*/
+  --content-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* FONT WEIGHTS */
+ --fw-extra-light: 200;
+ --fw-regular: 400;
+ --fw-medium: 500;
+ --fw-bold: 700;
+ --fw-extra-bold: 800;
+
+  /* COLORS */
+  --color-white: #FFFFFF;
+  --color-black: #212121;
+  --color-light-black: rgba(33, 33, 33, 0.2);
+  --color-gray: #F2F2F2;
+  --color-light-gray: #F9F9F9;
+  --color-dark-gray: #6B6B6B;
+  --color-success: #02C66F;
+  --color-warning: #FF9900;
+  --color-error: #e94d37;
+  
+  /* BORDERS */
+  --border-radius: 4px;
+
+  /* BACKGROUND */
+  --bg-primary-color: var(--color-white);
+  --bg-secondary-color: var(--color-light-gray);
+
+  /* CONTENT */
+  --content-primary-color: var(--color-black);
+  --content-secondary-color: var(--color-dark-gray);
+
+  /* ICONS */
+  --icon-size-sm: 18px; 
+  --icon-size-md: 24px;
+  --icon-size-lg: 32px;
+
+  /* BUTTONS */
+  --btn-primary-color: var(--color-white);
+  --btn-primary-bg: var(--color-black);
+  --btn-secondary-color: var(--color-black);
+  --btn-secondary-bg: var(--color-gray);
+
+  /* INPUTS */
+  --input-success-color: var(--color-success);
+  --input-warning-color: var(--color-warning);
+  --input-error-color: var(--color-error);
+
+  /* Z-index */
+  --modal-z-index: 1000;
+  --dropdown-z-index: 100;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../src/styles/index.css" />
+    <script src="../src/scripts/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="todo">
+      <div class="todo__container">
+        <!-- Todo Sidebar -->
+        <div class="todo__sidebar">
+          <!-- Sidebar Navigation  -->
+          <nav class="todo__sidebar-nav">
+            <div class="todo__nav-tasks-filter">
+              <div class="todo__nav-tasks-filter-title">
+                <div class="todo__nav-tasks-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-md"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                    />
+                  </svg>
+                </div>
+                <div class="todo__nav-tasks-filter-label">Tasks</div>
+              </div>
+
+              <ul id="nav-sortby-tasks">
+                <li class="todo__nav-all-tasks">
+                  <button
+                    class="todo__nav-task-btn todo__nav-all-tasks-btn active"
+                    id="all-tasks"
+                  >
+                    <span class="todo__nav-task-btn-label">All</span>
+                    <span class="todo__nav-tasks-count"></span>
+                  </button>
+                </li>
+                <li class="todo__nav-active-tasks">
+                  <button
+                    class="todo__nav-task-btn todo__nav-active-tasks-btn"
+                    id="active-tasks"
+                  >
+                    <span class="todo__nav-task-btn-label">Active</span>
+                    <span class="todo__nav-tasks-count"></span>
+                  </button>
+                </li>
+                <li class="todo__nav-completed-tasks">
+                  <button
+                    class="todo__nav-task-btn todo__nav-completed-tasks-btn"
+                    id="completed-tasks"
+                  >
+                    <span class="todo__nav-task-btn-label">Completed</span>
+                    <span class="todo__nav-tasks-count"></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Siderbar Footer -->
+          <div class="todo__sidebar-footer">
+            <div class="todo__avatar">
+              <div class="todo__avatar-thumbnail">
+                <img
+                  src="../assets/images/no-profile-picture.png"
+                  alt="Avatar"
+                />
+              </div>
+              <div class="todo__avatar-name">Mohamed Ismail</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Todo Main -->
+        <div class="todo__content">
+          <!-- Header  -->
+          <header class="todo__header">
+            <div class="todo__logo">Todo</div>
+          </header>
+
+          <!-- Main  -->
+          <main class="todo__main">
+            <div class="todo__main-wrapper">
+              <div class="todo__tasks-content">
+                <h1 class="todo__title">Your tasks</h1>
+
+                <div class="todo__tasks" id="todo-tasks">
+                  <!-- Tasks lists goes here -->
+                </div>
+              </div>
+
+              <div class="todo__add-task">
+                <form id="add-task-form">
+                  <div class="todo__add-task-input-wrapper">
+                    <input
+                      class="todo__add-task-input form-input"
+                      type="text"
+                      name="addTask"
+                      id="add-task-input"
+                      placeholder="What is your next task?"
+                      autocomplete="off"
+                      minlength="0"
+                      maxlength="100"
+                      aria-label="What is your next task?"
+                    />
+
+                    <button
+                      class="todo__add-task-btn button button--primary button--md button--rounded"
+                      id="add-task" 
+                      type="submit"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-md"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+                      <span>Add</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

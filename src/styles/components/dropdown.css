@@ -1,0 +1,26 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown__menu {
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% - 5px);
+  right: calc(100% - 34px);
+  z-index: var(--dropdown-z-index);
+  padding: 10px 0;
+  min-width: 180px;
+  max-height: 0;
+  opacity: 0;
+  border-radius: 10px;
+  background-color: var(--bg-primary-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px 0px;
+  transition: all 0.1s ease-in;
+}
+
+.dropdown__menu.open {
+  visibility: visible;
+  top: calc(100% + 5px);
+  max-height: 250px;
+  opacity: 1;
+}

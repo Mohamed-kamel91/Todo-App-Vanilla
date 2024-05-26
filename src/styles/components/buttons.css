@@ -1,0 +1,61 @@
+/* Base styles */
+.button {
+  position: relative;
+  display: inline-flex; /* align button children vertically while keeping button inline */
+  align-items: center;
+  column-gap: 10px;
+  transition: background-color 100ms ease-in; 
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+/* Button variants */
+.button--default {
+  background-color: transparent;
+}
+
+.button--default:hover {
+  background-color: var(--color-light-gray);
+}
+
+.button--primary {
+  color: var(--btn-primary-color);
+  background-color: var(--btn-primary-bg);
+}
+
+.button--primary:hover {
+  background-color: rgba(33, 33, 33, 0.95);
+}
+
+.button--secondary {
+  color: var(--btn-secondary-color);
+  background-color: var(--btn-secondary-bg);
+}
+
+.button--danger {
+  color: var(--input-error-color);
+}
+
+/* Button sizes */
+.button--sm {
+  padding: 10px 12px;
+}
+
+.button--md {
+  padding: 12px 14px;
+}
+
+.button--lg {
+  padding: 14px 16px;
+}
+
+/* Button shapes */
+.button--rounded {
+  border-radius: 5px;
+}
+
+.button--circle {
+  border-radius: 30px;
+}

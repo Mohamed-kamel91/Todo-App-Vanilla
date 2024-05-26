@@ -1,0 +1,58 @@
+/********************************************************
+  CONTENT:
+  GLOBALS
+    -background color
+
+  1- Headings
+    
+  2- Paragraphs / spans
+      
+  3- Links
+  
+  4- Buttons
+
+  5- Forms
+********************************************************/
+body {
+  font-family: var(--content-font);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  color: var(--color-black);
+}
+
+/*===========   HEADINGS   ===========*/
+h1 {
+  font-size: 40px;
+  font-weight: var(--fw-extra-bold);
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: var(--fw-bold);
+}
+
+
+/*===========   PARAGRAPH   ===========*/
+
+p {
+  
+}
+
+/*===========   Buttons   ===========*/
+
+button { 
+  font-family: var(--content-font);
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+}
+
+/*===========   Forms   ===========*/
+
+input, 
+select,
+textarea {
+  font-family: var(--content-font);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  color: var(--color-black);
+}

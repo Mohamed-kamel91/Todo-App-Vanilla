@@ -1,0 +1,15 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "todo list app with vanilla js",
+  "main": "src/scripts/todo.js",
+  "author": "Mohamed",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "serve": "live-server --entry-file=src/index.html --watch=assets,src --port=8000 --verbose "
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
