@@ -116,6 +116,7 @@
   top: 0;
   padding: 20px;
   background-color: var(--bg-primary-color);
+  z-index: var(--z-index-100);
 }
 
 .todo__logo {
@@ -167,6 +168,8 @@
   bottom: 0;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: var(--color-white);
+  z-index: var(--z-index-100);
 }
 
 .todo__add-task-input-wrapper {

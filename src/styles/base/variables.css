@@ -48,6 +48,5 @@
   --input-error-color: var(--color-error);
 
   /* Z-index */
-  --modal-z-index: 1000;
-  --dropdown-z-index: 100;
+  --z-index-100: 100;
 }
