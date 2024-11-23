@@ -48,5 +48,6 @@
   --input-error-color: var(--color-error);
 
   /* Z-index */
+  --z-index-50: 50;
   --z-index-100: 100;
 }

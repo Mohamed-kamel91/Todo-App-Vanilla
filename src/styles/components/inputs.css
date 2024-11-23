@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.form-input[type=checkbox] {
+.form-input[type=checkbox] {  
   flex-shrink: 0;
   position: relative;
   width: 25px;

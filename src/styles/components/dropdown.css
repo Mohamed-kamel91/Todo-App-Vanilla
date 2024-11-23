@@ -7,7 +7,7 @@
   position: absolute;
   top: calc(100% - 5px);
   right: calc(100% - 34px);
-  z-index: var(--dropdown-z-index);
+  z-index: var( --z-index-50);
   padding: 10px 0;
   min-width: 180px;
   max-height: 0;

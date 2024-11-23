@@ -36,7 +36,7 @@
   flex-grow: 1;
   font-weight: var(--fw-medium);
   user-select: none;
-}
+} 
 
 .task__text-input {
   font-weight: var(--fw-medium);
@@ -53,7 +53,7 @@
   padding: 0 14px;
 }
 
-.task__copy,
+.task__copy,  
 .task__dropdown {
   flex-shrink: 0;
 }
